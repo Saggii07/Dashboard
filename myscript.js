@@ -3,13 +3,17 @@
 function tn(number) {
   var num = number
 
+  var count = 0;
+
   if  (num == 88){
+    count=+1
     // document.getElementById('my1').style.visibility='visible';
     // document.getElementById('my').style.visibility='hidden';
     // changeBackground(red)
     console.log(num)
-    const collection = document.getElementsByClassName("charts-card");
-    collection[0].style.backgroundColor = "#99C262"
+    var collection = document.getElementsByClassName("charts-card");
+    collection[0].style.backgroundColor = "#2e7d32"
+   
     // document.getElementById("div2").style.boxShadow = "10px 20px 30px blue"
     
   }else if (num == 25){
@@ -24,14 +28,11 @@ function tn(number) {
 
     
   }
+  collection[0].innerHTML = count
+ 
+
 }
 
-// // var arr = [1,0]
-// // tn(0)
-// // setInterval(function(){tn(arr);},2000);
-// function changeBackground(color) {
-//    document.body.style.backgroundColor = color;
-// }
 
 
 function getRandomItem(arr) {
