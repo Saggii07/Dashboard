@@ -28,7 +28,7 @@ function tn(number) {
 
     
   }
-  collection[0].innerHTML = count
+  return count
  
 
 }
@@ -41,7 +41,10 @@ function getRandomItem(arr) {
     const item = arr[randomIndex];
     // console.log(item);
     document.getElementById('cat').innerHTML = item
-    tn(item)
+    var abc=tn(item)
+    var collection = document.getElementsByClassName("charts-card");
+    collection[0].getElementById('cat').innerHTML = abc
+
 
 
 }
